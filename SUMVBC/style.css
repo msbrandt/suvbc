@@ -1,0 +1,113 @@
+/*
+Theme Name: SUVBC
+Theme URI: http://students.syr.edu/suvbc/
+Author: Mikey Brandt
+Description: Syracuse Club Volleyball theme
+Version: v1.0
+
+Text Domain: suvbmc
+*/
+.clear{
+	clear: both;
+}
+ul{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+	margin: 0;
+
+}
+.page_padding{
+	padding: 20px;
+}
+.page_wrapper{
+	width: 1020px;
+	background: #999;
+	margin: 0 auto;
+}
+/* Navbar**************************************/
+nav {
+	width: 100%;
+	background: #777;
+	/*height: 100px;*/
+}
+#nav_wrapper{
+	padding: 20px 0 0 20px;
+	/*background: #00ffff;*/
+}
+
+#image_temp{
+	width: 50px;
+	height: 50px;
+	background: #3366ff;
+	float: left;
+}
+.nav_logo{
+	width: 300px;
+	background: #ff0000;
+	float: left;
+}
+
+.nav_buttons{
+	float: right;
+}
+
+.nav_logo h2{
+	float: left;
+	margin: 0;
+
+}
+
+ul.navbar_content{
+	margin: 0;
+	margin-top: 6px;
+	padding: 0;
+	overflow: hidden;
+
+}
+
+ul.navbar_content li{
+	float: left;
+	list-style: none;
+	padding: 10px 20px;
+	text-align: center;
+	border-bottom: 0px solid #00ffff;
+}
+
+/* Page content**************************************/
+
+.main_content{
+	width: 100%;
+	background: #aaa;
+}
+
+ul.page_main_content{
+	height: 500px;
+	background: #ffff00;
+	width: 100%;
+}
+ul.page_main_content li{
+	height: 400px;
+	background: #ff3344;
+	position: absolute;
+	width: 980px;
+}
+ul.showcase_dec{
+	background: #00ff00;
+	height: 200px;
+}
+ul.page_main_content li:first-of-type{
+	background: #ff3366;
+	}
+
+ul.page_main_content li:nth-of-type(2){
+	background: #33ff66;
+	}
+ul.page_main_content li:nth-of-type(3){
+	background: #3366ff;
+	}
+ul.page_main_content li:last-of-type{
+	background: #ff00ff;
+	}
