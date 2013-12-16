@@ -29,26 +29,24 @@
 	<a id="top"></a>
 	<div id="stickynav">
 		<nav>
-			<div id="nav_wrapper">
-				
-				<div class="nav_logo">
-					<div id="image_temp"><img src="#" /></div>
-					<h2><?php bloginfo( 'title' ); ?></h2>
-				</div>
-				
+			<div class="nav_wrapper">
+				<img src="<?php bloginfo( 'template_url' );?>/img/volleyball_logo.gif" /> 
 				<div class="nav_buttons">
 					<ul class="navbar_content">
-						<!-- <li><?php wp_nav_menu( array( 'container_class' => 'main_nav', 'container' => 'nav' ) ); ?></li> -->
 						<li>home</li>
-						<li>sample</li>
-						<li>sapme 2</li>
-						<li><?php get_search_form(); ?></li>
-					<div class="clear"></div></ul> <!-- end navbar_content -->
+						<li>players</li>
+						<li>featured</li>
+						<li>contact</li>
+					</ul> <!-- end navbar_content -->
 
 				</div>
+
+
 				<div class="clear"></div>
 			</div> <!-- end nav_wrapper -->
 
 		</nav>
+
 	</div><!-- end stickynav -->
-	<div class="main_content">
+
+<div class="main_content">
