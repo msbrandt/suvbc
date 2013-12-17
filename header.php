@@ -24,6 +24,7 @@
 	</title>
 	<?php wp_head(); ?>
 
+
 </head>
 <body <?php body_class(); ?>>
 	<a id="top"></a>
@@ -32,11 +33,11 @@
 			<div class="nav_wrapper">
 				<img src="<?php bloginfo( 'template_url' );?>/img/volleyball_logo.gif" /> 
 				<div class="nav_buttons">
-					<ul class="navbar_content">
-						<li>home</li>
-						<li>players</li>
-						<li>featured</li>
-						<li>contact</li>
+					<ul class="navbar_content waypoints">
+						<li><a href="#top">home</a></li>
+						<li><a href="#players">players</a></li>
+						<li><a href="#feat">featured</a></li>
+						<li><a href="#contact">contact</a></li>
 					</ul> <!-- end navbar_content -->
 
 				</div>
@@ -48,5 +49,4 @@
 		</nav>
 
 	</div><!-- end stickynav -->
-
 <div class="main_content">

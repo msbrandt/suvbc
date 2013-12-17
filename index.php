@@ -43,14 +43,67 @@
 	</div><!-- end page_padding -->
 </div> <!-- end page_wrapper -->
 </div> <!--end home_section -->
-<div id="player_section">
+<a id="players"></a>
 
-<div id="now_fixed_nav">
-	new navbar <br />
-	player content <br />
-	fonts
-</div>
+<div id="player_section" class="section s2">
 
+	<div class="page_wrapper">
+		<div class="page_padding">
+			<div id="theTeam">
+			<h1>Meet the team</h1>
+			
+			<table>
+				<thead>
+					<tr>
+						<th id='number'>#</th>
+						<th id="name">name</th>
+						<th id="pos">pos.</th>
+						<th id="cal">cl.</th>
+						<th id="ht">Hometown</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+
+			<div id="player_info">
+				<div id="image_padding">
+					<div id="player_image">
+					
+						image
+					</div>
+				</div>
+			<div class="clear"></div>
+
+				
+					<div id="bio_padding">
+						<div id="player_bio">
+						bio
+						</div>
+					</div>
+
+			</div><!-- end player_inf0 -->
+			<div class="clear"></div>
+
+			</div><!-- end of theTeam -->
+
+		</div>
+
+	</div>
+
+</div><!--end of players sectrion -->
+
+
+
+<a id="feat"></a>
+<div id="featured_section">
+	featured
+</div><!-- end of featured_section -->
+
+<a id="contact"></a>
+<div id="contact_us">
+	contact us
+</div><!-- end of contact_us -->
 
 
 <?php get_sidebar(); ?>

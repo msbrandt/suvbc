@@ -68,7 +68,9 @@ nav {
 }
 
 .nav_buttons{
-	background: #555;
+	/*background: #555;*/
+
+    background: #666;
 	float: right;
 	margin-top: 50px;
 	box-shadow: inset 0px 10px 10px #333; 
@@ -83,7 +85,8 @@ nav {
  	top: 25px;
  	width: 160px;
  	height: 55px;
- 	background: #555;
+ 	/*background: #555;*/
+ 	background: #666;
  	box-shadow: 0px 20px 10px -10px #333 inset;
  	border: 0;
  	-webkit-transform: rotate(-20deg);
@@ -111,13 +114,19 @@ ul.navbar_content li{
 	text-align: center;
 	border-bottom: 0px solid #00ffff;
 	text-transform: uppercase;
+	font-family: arial;
+	color: #ddd;
+}
+ul.navbar_content li a{
+	text-decoration: none;
+	color: #ddd
 }
 ul.navbar_content li:hover{
 	color: #00aaaa;
 	background: #ffff00;
 }
 ul.navbar_content li:first-of-type{
-	border-bottom: 5px solid #FFA500;
+	border-bottom: 5px solid #EA7809;
 }
 
 
@@ -229,7 +238,7 @@ ul.page_main_content li:last-of-type{
 .nav_pos_button{
 	height: 20px;
 	width: 20px;
-	box-shadow: 5px 5px 5px #333 inset;
+	box-shadow: 2px 2px 5px #333 inset;
 	background: #aaa;
 	float: left;
 	margin-right: 10px;
@@ -264,9 +273,64 @@ ul.page_main_content li:last-of-type{
 
 }
 
+/* Players ************************************/
+#image_padding{
+	padding: 20px;
+}
+#bio_padding{
+	padding: 5px 20px 20px 20px;
+}
+#player_section{
+	height: 1000px;
+}
+#theTeam{
+	margin-top: 200px;
+	background: #ffa500;
+}
+#theTeam h1{
+	margin-bottom: 50px;
+}
+table{
+	width: 50%;
+	float: left;
+	background: #00ffa5;
+   	border-collapse: collapse;
+}
+#player_info{
+	width: 45%;
+	float: left;
+	background: #ff00a5;
+}
+tbody tr td{
+	background: #00ff00;
+	padding: 10px 0;
+
+}
+table tr th{
+	text-align: left;
+}
+#player_image{
+	width: 100%;
+	background: #0000ff;
+	height: 400px;
+}
+#player_bio{
+	width: 100%;
+	background: purple;
+	height: 100px;
+}
+
+/* featured ***********************************/
+#featured_section{
+	height: 1000px;
+}
+/* contact ************************************/
+#contact_us{
+	height: 1000px;
+}
+
 /* Footer **************************************/
 
 #footer{
 	background: #00ffff;
 }
-/* Players ************************************/
