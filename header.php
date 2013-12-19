@@ -28,18 +28,19 @@
 </head>
 <body <?php body_class(); ?>>
 	<a id="top"></a>
+	<div id="temp_nav"></div>
 	<div id="stickynav">
 		<nav>
 			<div class="nav_wrapper">
 				<img src="<?php bloginfo( 'template_url' );?>/img/volleyball_logo.gif" /> 
 				<div class="nav_buttons">
 					<ul class="navbar_content waypoints">
-						<li><a href="#top">home</a></li>
-						<li><a href="#players">players</a></li>
-						<li><a href="#feat">featured</a></li>
-						<li><a href="#contact">contact</a></li>
+						<li><a href="#top" id="s1">home</a></li>
+						<li><a href="#players" id="s2">players</a></li>
+						<li><a href="#feat" id="s3">featured</a></li>
+						<li><a href="#contact" id="s4">contact</a></li>
 					</ul> <!-- end navbar_content -->
-
+					<div id="underline"></div>
 				</div>
 
 
