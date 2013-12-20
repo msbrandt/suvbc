@@ -5,11 +5,12 @@
 		register_post_type( 'suvbc_img',
 			array( 'labels' => 
 				array(
-					'name' => __('Slider')
+					'name' => __('Slider Image')
 			), 
 			'public' => true,
 			'menu_position' => 5,
-			'rewrite' => array( 'slug' => 'learn')
+			'rewrite' => array( 'slug' => 'learn'),
+			'has_archive' => true
 			)
 		);
 	}

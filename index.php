@@ -12,12 +12,46 @@
 	<div class="page_padding">
 		<div id="main_page_slider">
 		<ul class="page_main_content">
-			<li><div class="slider_dec"><div class="page_padding">this is box 1</div></div>
-				<?php
-					$loop = new WP_Query(array('post_type' => 'SUVBC_slider', 'posts_per_page' => -1,));
-					while ($loop -> have_posts() ) : $loop->the_post(); 
-				?>
-			</li>
+			<!-- <li><div class="slider_dec"><div class="page_padding">this is box 1</div></div></li> -->
+					<?php 
+						$args = array( 
+							'post_type' => 'suvbc_img',
+							'numberposts' => -1,
+						);
+
+						$q = get_posts( $args );
+						if ( $q ){
+							$count = 0;
+							$image = array();
+							foreach ( $q as $qq){
+								array_push($image, $q->guid);
+
+								if ( $count == 0){
+					?>
+									<li id="slide_<?php echo $count+1; ?>">
+										<?php 
+											$player_img = array(
+												'id' => 'slides'
+												);
+										?>
+										<?php echo wp_get_attachment_image($q->ID, 'full', false, $player_img); ?>
+										<?php $count = $count + 1  ?>
+
+									</li>	
+						<?php	}  //end it ?>
+					<?php 	}// end foreach ?>
+				  <?php }  //end if $q ?>
+
+<!-- 						if ( have_posts() ) { 
+							while( $q -> have_posts() ) : $q -> the_post();
+						
+								echo '<li>';
+								echo wp_get_attachment_image( $attachment->ID, 'full');
+								echo '</li>';	
+							
+							endwhile;
+						} -->
+					
 			
 		</ul>
 			<div id="slider_navagation">

@@ -296,7 +296,7 @@ ul.page_main_content li:last-of-type{
 
 }
 ul.page_main_content li:last-of-type{
-	background: url(img/slide.jpeg);
+	/*background: url(img/slide.jpeg);*/
 	background-size: cover;
 	background-repeat: no-repeat;
 }
