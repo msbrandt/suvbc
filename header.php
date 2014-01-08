@@ -35,12 +35,11 @@
 				<img src="<?php bloginfo( 'template_url' );?>/img/volleyball_logo.gif" /> 
 				<div class="nav_buttons">
 					<ul class="navbar_content waypoints">
-						<li><a href="#top" id="s1">home</a></li>
+						<li class="start"><a href="#top" id="s1">home</a></li>
 						<li><a href="#players" id="s2">players</a></li>
 						<li><a href="#feat" id="s3">featured</a></li>
 						<li><a href="#contact" id="s4">contact</a></li>
 					</ul> <!-- end navbar_content -->
-					<div id="underline"></div>
 				</div>
 
 

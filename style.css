@@ -103,7 +103,7 @@ nav {
 
 ul.navbar_content{
 	margin: 0;
-	margin-top: 6px;
+	margin-top: 5px;
 	padding: 0;
 	overflow: hidden;
 	position: relative;
@@ -113,21 +113,27 @@ ul.navbar_content{
 ul.navbar_content li{
 	float: left;
 	list-style: none;
-	padding: 10px 0;
+	padding: 15px 0;
 	width: 25%;
 	text-align: center;
-	border-bottom: 0px solid #00ffff;
 	text-transform: uppercase;
 	font-family: arial;
 	color: #ddd;
+	-moz-transition: 0.25s linear;
+	-webkit-transition: 0.25s linear;
+	transition: 0.25s linear;
 }
 ul.navbar_content li a{
 	text-decoration: none;
-	color: #ddd
+	color: #dddfaa;
+
 }
+
 ul.navbar_content li:hover{
+
 	color: #00aaaa;
 	background: #ffff00;
+
 }
 /*ul.navbar_content li:first-of-type{
 	border-bottom: 5px solid #EA7809;
@@ -148,11 +154,13 @@ ul.navbar_content li:hover{
 	width: 100%;
 	top: 33px;
 }
-#underline{
+#underLine{
+	position: absolute;
+	bottom: -22px;
+	left: 0;
+	height: 2px;
 	width: 25%;
-	height: 5px;
 	background: #EA7809;
-	position: relative;
 }
 
 /* Page content**************************************/
@@ -185,18 +193,12 @@ ul.slider_position{
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	background: #044E71;
+	background: rgba(4,78,113,.8);
 }
-#slider_navagation:before{
-	width: 0;
-	height: 0;
-	border-bottom: 60px solid #044E71;
-	border-left: 100px solid transparent;
-	position: absolute;
-	right: 220px;
-	content:"";
+.page_padding_nav{
+	padding: 10px;
+}
 
-}
 
 #main_page_slider{
 	width: 100%;
@@ -235,7 +237,6 @@ ul.buttons li{
 
 ul.page_main_content{
 	height: 400px;
-	background: #ffff00;
 	margin-top: 65px;
 }
 ul.page_main_content li{
@@ -243,20 +244,9 @@ ul.page_main_content li{
 	background: #ff3344;
 	position: absolute;
 	width: 980px;
-	border-radius: 10px;
+	background-size: cover;
+
 }
-
-
-
-ul.page_main_content li:nth-of-type(2){
-	background: #33ff66;
-	}
-ul.page_main_content li:nth-of-type(3){
-	background: #3366ff;
-	}
-ul.page_main_content li:last-of-type{
-	background: #ff00ff;
-	}
 
 .nav_pos_button{
 	height: 20px;
@@ -276,8 +266,7 @@ ul.page_main_content li:last-of-type{
 	height: 0; 
 	border-top: 10px  solid transparent;
 	border-bottom: 10px  solid transparent;
-	
-	border-left: 10px  solid green;
+	border-left: 10px  solid #EA7809;
 }
 
 #left{
@@ -286,7 +275,7 @@ ul.page_main_content li:last-of-type{
 	border-top: 10px solid transparent;
 	border-bottom: 10px solid transparent; 
 	
-	border-right:10px solid blue;
+	border-right:10px solid #EA7809;
 }
 
 .showcase_dec{
@@ -299,6 +288,16 @@ ul.page_main_content li:last-of-type{
 	/*background: url(img/slide.jpeg);*/
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.slide_dec{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: rgba(4,78,113,.8);
+	width: 40%;
+	padding: 15px;
+	text-transform: uppercase;
 }
 
 /* Players ************************************/

@@ -12,50 +12,28 @@
 	<div class="page_padding">
 		<div id="main_page_slider">
 		<ul class="page_main_content">
-			<!-- <li><div class="slider_dec"><div class="page_padding">this is box 1</div></div></li> -->
-					<?php 
-						$args = array( 
-							'post_type' => 'suvbc_img',
-							'numberposts' => -1,
-						);
-
-						$q = get_posts( $args );
-						if ( $q ){
-							$count = 0;
-							$image = array();
-							foreach ( $q as $qq){
-								array_push($image, $q->guid);
-
-								if ( $count == 0){
-					?>
-									<li id="slide_<?php echo $count+1; ?>">
-										<?php 
-											$player_img = array(
-												'id' => 'slides'
-												);
-										?>
-										<?php echo wp_get_attachment_image($q->ID, 'full', false, $player_img); ?>
-										<?php $count = $count + 1  ?>
-
-									</li>	
-						<?php	}  //end it ?>
-					<?php 	}// end foreach ?>
-				  <?php }  //end if $q ?>
-
-<!-- 						if ( have_posts() ) { 
-							while( $q -> have_posts() ) : $q -> the_post();
-						
-								echo '<li>';
-								echo wp_get_attachment_image( $attachment->ID, 'full');
-								echo '</li>';	
-							
-							endwhile;
-						} -->
-					
 			
+			<?php 
+				$args = array( 
+					'post_type' => 'suvbc_img',
+					'numberposts' => -1,
+				);
+
+				$x = new WP_Query( $args );
+				
+				if ( have_posts() ) {
+					while ($x -> have_posts()) { $x -> the_post();
+						suvbc_showcase_slider();
+					}
+				}
+
+
+			 ?>
+
 		</ul>
+
 			<div id="slider_navagation">
-				<div class="page_padding">
+				<div class="page_padding_nav">
 					<div class="slider_button" id="left"></div>
 					<div class="slider_button" id="right"></div>
 
@@ -70,10 +48,10 @@
 
 		</div><!-- end of page slider -->
 
-
+		<h1>Up comeing events</h1>
 		<div class="showcase_dec">
 			<div class="page_padding">
-				upcoming event plugin
+				
 			</div>
 			<a id="fix_nav_trigger"></a>
 		</div>
